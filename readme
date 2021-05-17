@@ -1,0 +1,22 @@
+Program Author:
+		Mujtaba Mujtaba
+		101167348
+
+Purpose: The purpose of this program is to generate a set of reports based on the data from Statistics Canada other livestock data. The census in farm.dat represent data for years 2011 and 2016. The data includes multiple things, and to get this data, we use Record class and Map class to store the data after reading them from the file through file operators. The format of data is as follows: year region subRegion animalType numFarms numAnimals. The 3 derived report generator classes read the data according to set the criteria and calls the format data to store this data in rows using Report Row and the order is is defined as well, orders include ascending and descending comparsion this is implemented through the help of CompareBehaviour.
+
+
+source files: main.cc .cc Record.cc ReportGenerator.cc ReportGeneratorSubRegion.cc ChangeReportGenerator.cc FarmReportGenerator.cc Control.cc View.cc
+
+Record.o ReportGenerator.o ReportGeneratorSubRegion.o ChangeReportGenerator.o Control.o FarmReportGenerator.o View.o
+
+header files:  Record.h ReportData.h CompareBehaviour.h Map.h ReportGenerator.h ReportGeneratorSubRegion.h ChangeReportGenerator.h Control.h FarmReportGenerator.h View.h
+
+compilation: make
+to remove .o files: make clean
+
+to execute: ./report
+
+after executing:
+	4 options to choose from: pick a nuumber 0 to 3
+	after executing the program you can pick your choice.
+
